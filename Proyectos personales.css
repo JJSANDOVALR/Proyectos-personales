@@ -1,0 +1,215 @@
+/*Estilo general de todo el body*/
+body{
+  font-family: 'Poppins', sans-serif;
+}
+@media(min-width: 4000px){
+  body{
+    font-size: 20px;
+  }
+}
+/*Estilo al header y sus elementos*/
+header{
+  background-color: #be3144;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  font-size: 21px;
+  font-weight: 400;
+}
+#navbar ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: black;
+  justify-content: end;
+}
+#navbar li{
+  margin-right: 35px;
+}
+ul a:visited{
+  color: white;
+}
+ul a:link{
+  text-decoration: none;
+  color: white;
+}
+/*Estilo sección 1: sección de bienvenida*/
+#welcome-section{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(62deg, #3a3d40, #181719);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-bottom: -20px;
+}
+#welcome-section h1{
+  font-size: 50px;
+  color: white;
+  margin-bottom: 0px;
+}
+#welcome-section h2{
+  margin-top: 0px;
+  font-size: 30px;
+  color: #be3144;
+  font-weight:lighter;
+}
+#welcome-section p{
+  margin-top: 0px;
+  color: white;
+  font-weight: lighter;
+}
+/*Estilo a la seccción 2: sección de proyectos*/
+#projects{
+  margin-top: 0px;
+  background-color: #45567d;
+  width: 100vw;
+}
+#projects h2{
+  font-size: 40px;
+  padding: 70px;
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+#projects hr{
+  width: 730px;
+  margin-top: -100px;
+  margin-bottom: 60px;
+}
+#projects div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+}
+.project1{
+  margin-left: 4vw;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}  
+.project2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.project3{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.project4{
+  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-left: 4vw;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#projects a{
+  width: 28vw;
+  background-color: #303841;
+}
+#projects a img{
+  width: 26vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+#projects a{
+  text-decoration: none;
+}
+#projects a span{
+  color: #be3144;
+  opacity: 0;
+  animation-name: twinkle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes twinkle {
+  50%{
+    opacity: 1;
+  }
+}
+#projects a p{
+  width: 28vw;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*Estilo sección 3: sección de contactos*/
+#contacto{
+  background: #303841;
+  width: 100vw;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#contacto p{
+  text-align: center;
+}
+#contacto h2{
+  font-size: 40px;
+}
+#contacto img{
+  width: 30px;
+}
+.hr2{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.hr2 hr{
+  margin-top: 0px;
+  padding-top: 0px;
+  border-color: #be3144;
+  width: 100vw;
+  border-width: 3px;
+}
+#contacto a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+#contacto .contactos{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+#contacto a:link{
+  text-decoration: none;
+  color: white;
+}
+#contacto a:visited{
+  color: white;
+}
+#contacto a img{
+  margin-right: 7px;
+}
+#contacto p{
+  margin-top: -30px;
+  opacity: 0.7;
+}
+.project-tile{
+  color: white;
+}
+/*Estilo al pie de página*/
+footer{
+  margin-top: -9px;
+  padding-top: 0px;
+  background:#303841;
+  width: 100vw;
+  height: 10vh;
+  font-size: 19px;
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+footer p{
+  margin-right: 55px;
+}
